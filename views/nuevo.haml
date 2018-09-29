@@ -1,0 +1,12 @@
+%form{:method => 'post', :class => 'form'}
+
+	%label{:class => 'label', :for => 'title'} Titulo
+	%input{:type => 'text', :name => 'title', :class => 'textbox', :id => 'title'}
+
+	%label{:class => 'label', :for => 'body'} Body
+	%textarea{:name => 'body', :class => 'textarea', :rows => '14', :id => 'body'}
+
+	%label{:class => 'label', :for => 'password'} Password
+	%input{:type => 'password', :name => 'password', :class => 'textbox', :id => 'password'}
+
+	%input{:type => 'submit', :value => 'Create post', :class => 'send'}

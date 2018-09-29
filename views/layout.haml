@@ -1,0 +1,26 @@
+!!!
+%html
+	%head
+		%title Blog
+		%meta{:charset => 'utf-8'}
+		%meta{:name => 'keywords', :content => 'blog, something, new, perix, enterprise'}
+		%meta{:name => 'description', :content => 'This a blog make with ruby, sinatra framework and sqlite3'}
+		%meta{:name => 'author', :content => 'Paris Emmanuel Vazquez Venzor'}
+		%link{:href => '/css/main.css', :rel => 'stylesheet', :type => 'text/css'}
+	%body
+		.header
+			%h1 My Blog
+			.nav
+				%a{:href => '/', :class => 'elem'} Home
+				%a{:href => '/about', :class => 'elem'} About
+				%a{:href => 'https://www.facebook.com/pavazstuff', :class => 'elem', :target => '_blank'} Facebook
+				%a{:href => 'https://twitter.com/pavazstuff', :class => 'elem', :target => '_blank'} Twitter
+				%a{:href => 'http://parisvazlife.blogspot.mx', :class => 'elem', :target => '_blank'} Blogger
+				%a{:href => 'https://www.youtube.com/channel/UC0EiXtyAaHvoR956F4BN-Zw', :class => 'elem', :target => '_blank'} YouTube
+		
+		.container= yield
+
+		.footer
+			%p 
+				&copy; Perix Enterprise 2017.
+				%a{:href => '/post', :class => 'link'} Admin

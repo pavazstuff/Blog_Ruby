@@ -1,0 +1,6 @@
+#posts
+	.post
+		%h2= @post[:title]
+		%p= @post[:timestamp]
+		%p= @post[:body]
+		%a{:href => '/'} Return to home

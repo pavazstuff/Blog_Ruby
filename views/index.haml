@@ -1,0 +1,11 @@
+#posts
+	- @posts.reverse_each do |post|
+		.post
+			%h2
+				%a{:href => "/post/#{post[:id]}", :class => 'title'}= post[:title]
+			%p
+				= post[:body][0..100] << "..."
+				%a{:href => "/post/#{post[:id]}"} Read more
+				%br
+				= post[:timestamp][0..15]
+			

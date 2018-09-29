@@ -1,0 +1,125 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: #f5f5f5;
+	font-family: 'courier';
+}
+
+h1
+{
+	background: #fff;
+	padding: 5px 30px;
+}
+
+.nav
+{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	background: #336dcc;
+	margin-bottom: 15px;
+}
+
+.elem
+{
+	flex-grow: 1;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+.elem:hover
+{
+	background: rgba(0,0,0,0.5);
+}
+
+.post, .form, .profile
+{
+	background: #fff;
+	padding: 10px 30px;
+	margin-bottom: 15px;
+}
+
+.title
+{
+	color: #000;
+	text-decoration: none;
+}
+.title:hover
+{
+	text-decoration: underline;
+}
+.title:before
+{
+	content: '> ';
+}
+
+.footer
+{
+	padding: 10px 30px;
+	margin-bottom: 15px;
+}
+
+.link
+{
+	color: #000;
+}
+
+.label
+{
+	font-weight: bold;
+}
+
+.label, .textbox, .textarea
+{
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+}
+
+.send
+{
+	background: #336dcc;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+}
+.send:hover
+{
+	background: #193665;
+}
+
+.author
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img, .info
+{
+	flex-shrink: 1;
+	padding: 10px;
+}
+.image
+{
+	border: 1px solid #999;
+	padding: 4px;
+}
+
+p
+{
+	margin-bottom: 15px;
+}
+
+a
+{
+	color: #000ff2;
+}
